@@ -9,6 +9,6 @@ export class ColumnModel {
     @Field()
     title: string;
 
-    @Field(() => [CardModel])
+    @Field(() => [CardModel], { nullable: true })
     cards?: CardModel[];
 }
